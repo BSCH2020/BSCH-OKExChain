@@ -1,0 +1,1792 @@
+{
+  "fun": [
+    "BRIDGE_EXEC_ROLE",
+    "BRIDGE_ROLE",
+    "BRIDGE_TIMEOUT_SECONDS",
+    "DEFAULT_ADMIN_ROLE",
+    "DEFAULT_FEE_AMOUNT",
+    "IS_SIDE_CHAIN",
+    "MAX_ADDRESS_LEN",
+    "PAUSER_ROLE",
+    "adminFeatRenounced",
+    "bridgeInSearchMap((address)(address)(uint256))",
+    "bridgeTokenPair((address)(uint256))",
+    "claimOwnership",
+    "devAddr",
+    "getOwner",
+    "getRoleAdmin(role(bytes32))",
+    "getRoleMember(role(bytes32)index(uint256))",
+    "getRoleMemberCount(role(bytes32))",
+    "grantRole(role(bytes32)account(address))",
+    "hasRole(role(bytes32)account(address))",
+    "owner",
+    "pause",
+    "paused",
+    "pendingOwner",
+    "reclaimToken(_token(address))",
+    "records((uint256))",
+    "renounceAdminFeature",
+    "renounceOwnership",
+    "renounceRole(role(bytes32)account(address))",
+    "revokeRole(role(bytes32)account(address))",
+    "transferOwnership(newOwner(address))",
+    "transferOwnershipImmediately(newOwner(address))",
+    "unpause",
+    "userRecord((address)(address)(uint256))",
+    "initialize",
+    "initialize(sideChain(bool))",
+    "getBridgeTokenPair(local(address)otherNetworkId(uint256))",
+    "getRecordsLen",
+    "getUserRecordLen(account(address)token(address))",
+    "getUserRecord(account(address)token(address)index(uint256))",
+    "changeTimeoutSeconds(seconds_(uint256))",
+    "setMaxAddrLen(len_(uint256))",
+    "setFeeAmount(token(address)fee(uint256))",
+    "setDevAddr(addr(address))",
+    "addBridgeTokenPair(local(address)otherNetworkId(uint256)otherSideToken_(string)otherSideBridge_(string))",
+    "changeBridgeTokenPairSettings(local(address)otherNetworkId(uint256)enable_(bool)otherSideBridge_(string))",
+    "rollLeaveBack(index(uint256))",
+    "changeOutStatus(index(uint256)status(uint256)otherSideTxid_(uint256))",
+    "batchChangeOutStatus(index(uint256[])status(uint256[])otherSideTxids(uint256[]))",
+    "claimOutBack(account(address)index(uint256))",
+    "bridgeOut(token(address)otherSideAddress_(string)otherNetworkId(uint256)amount(uint256))",
+    "batchBridgeIn(localSides(tuple[])otherSides(tuple[])amounts(uint256[])bridgeFees(uint256[]))",
+    "bridgeInWith(localSide(tuple)otherSideParam(tuple)otherSideAddress(string)otherSideToken(string))",
+    "bridgeInWithPlain(localSide(tuple)otherNetworkId(uint256)otherSideTxid(uint256)amount(uint256)bridgeFee(uint256)otherSideAddress(string)otherSideToken(string))",
+    "bridgeIn(localSide(tuple)otherSide(tuple)amount(uint256)bridgeFee(uint256))",
+    "getBridgeInIndexBy(localSide(tuple)otherSide(tuple))",
+    "getBridgeInBy(localSide(tuple)otherSide(tuple))"
+  ],
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "otherSideAddress",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "otherSideToken",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "networkId",
+          "type": "uint256"
+        }
+      ],
+      "name": "BridgeBack",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "otherSideAddress",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "otherSideToken",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "networkId",
+          "type": "uint256"
+        }
+      ],
+      "name": "BridgeLeave",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "Paused",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "status",
+          "type": "uint256"
+        }
+      ],
+      "name": "RecordStatusChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "previousAdminRole",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "newAdminRole",
+          "type": "bytes32"
+        }
+      ],
+      "name": "RoleAdminChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        }
+      ],
+      "name": "RoleGranted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        }
+      ],
+      "name": "RoleRevoked",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "Unpaused",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "BRIDGE_EXEC_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "BRIDGE_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "BRIDGE_TIMEOUT_SECONDS",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DEFAULT_ADMIN_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DEFAULT_FEE_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "IS_SIDE_CHAIN",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MAX_ADDRESS_LEN",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PAUSER_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "adminFeatRenounced",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "bridgeInSearchMap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "bridgeTokenPair",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "networkId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "otherSideToken",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "exist",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "enable",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "leftAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "commitedLeftAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "backedAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "otherSideBridge",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "maxOtherSideTxid",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "claimOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "devAddr",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getRoleAdmin",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRoleMember",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getRoleMemberCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "grantRole",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "hasRole",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pause",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "paused",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pendingOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20Upgradeable",
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "reclaimToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "records",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "recordType",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "localAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "localToken",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MayaBridge.LocalRecord",
+          "name": "localInfo",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "otherSideAddress",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "otherSideToken",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherNetworkId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherSideTxid",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MayaBridge.OtherSideRecord",
+          "name": "otherSideInfo",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "status",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "op",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bridgeFee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "cts",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "uts",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceAdminFeature",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "renounceRole",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "role",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "revokeRole",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnershipImmediately",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unpause",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "userRecord",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "sideChain",
+          "type": "bool"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "local",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherNetworkId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getBridgeTokenPair",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "networkId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "otherSideToken",
+              "type": "string"
+            },
+            {
+              "internalType": "bool",
+              "name": "exist",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "enable",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "leftAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "commitedLeftAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "backedAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "otherSideBridge",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxOtherSideTxid",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MayaBridge.BridgeTokenPair",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getRecordsLen",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        }
+      ],
+      "name": "getUserRecordLen",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getUserRecord",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "recordType",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "localAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "localToken",
+                  "type": "address"
+                }
+              ],
+              "internalType": "struct MayaBridge.LocalRecord",
+              "name": "localInfo",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "otherSideAddress",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "otherSideToken",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "otherNetworkId",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "otherSideTxid",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct MayaBridge.OtherSideRecord",
+              "name": "otherSideInfo",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "status",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "op",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "bridgeFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "cts",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "uts",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MayaBridge.BridgeRecord",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "seconds_",
+          "type": "uint256"
+        }
+      ],
+      "name": "changeTimeoutSeconds",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "len_",
+          "type": "uint256"
+        }
+      ],
+      "name": "setMaxAddrLen",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fee",
+          "type": "uint256"
+        }
+      ],
+      "name": "setFeeAmount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "setDevAddr",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "local",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherNetworkId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "otherSideToken_",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "otherSideBridge_",
+          "type": "string"
+        }
+      ],
+      "name": "addBridgeTokenPair",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "local",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherNetworkId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "enable_",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "otherSideBridge_",
+          "type": "string"
+        }
+      ],
+      "name": "changeBridgeTokenPairSettings",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "rollLeaveBack",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "status",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherSideTxid_",
+          "type": "uint256"
+        }
+      ],
+      "name": "changeOutStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "index",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "status",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "otherSideTxids",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "batchChangeOutStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "claimOutBack",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "otherSideAddress_",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherNetworkId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "bridgeOut",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "localAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "localToken",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MayaBridge.LocalRecord[]",
+          "name": "localSides",
+          "type": "tuple[]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "otherSideAddress",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "otherSideToken",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherNetworkId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherSideTxid",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MayaBridge.OtherSideRecord[]",
+          "name": "otherSides",
+          "type": "tuple[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "bridgeFees",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "batchBridgeIn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "localAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "localToken",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MayaBridge.LocalRecord",
+          "name": "localSide",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "otherNetworkId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherSideTxid",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "bridgeFee",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MayaBridge.OtherSideWithAmountParam",
+          "name": "otherSideParam",
+          "type": "tuple"
+        },
+        {
+          "internalType": "string",
+          "name": "otherSideAddress",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "otherSideToken",
+          "type": "string"
+        }
+      ],
+      "name": "bridgeInWith",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "localAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "localToken",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MayaBridge.LocalRecord",
+          "name": "localSide",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherNetworkId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "otherSideTxid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bridgeFee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "otherSideAddress",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "otherSideToken",
+          "type": "string"
+        }
+      ],
+      "name": "bridgeInWithPlain",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "localAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "localToken",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MayaBridge.LocalRecord",
+          "name": "localSide",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "otherSideAddress",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "otherSideToken",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherNetworkId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherSideTxid",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MayaBridge.OtherSideRecord",
+          "name": "otherSide",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bridgeFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "bridgeIn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "localAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "localToken",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MayaBridge.LocalRecord",
+          "name": "localSide",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "otherSideAddress",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "otherSideToken",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherNetworkId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherSideTxid",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MayaBridge.OtherSideRecord",
+          "name": "otherSide",
+          "type": "tuple"
+        }
+      ],
+      "name": "getBridgeInIndexBy",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "localAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "localToken",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct MayaBridge.LocalRecord",
+          "name": "localSide",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "otherSideAddress",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "otherSideToken",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherNetworkId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "otherSideTxid",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MayaBridge.OtherSideRecord",
+          "name": "otherSide",
+          "type": "tuple"
+        }
+      ],
+      "name": "getBridgeInBy",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "recordType",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "localAddress",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "localToken",
+                  "type": "address"
+                }
+              ],
+              "internalType": "struct MayaBridge.LocalRecord",
+              "name": "localInfo",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "string",
+                  "name": "otherSideAddress",
+                  "type": "string"
+                },
+                {
+                  "internalType": "string",
+                  "name": "otherSideToken",
+                  "type": "string"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "otherNetworkId",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "otherSideTxid",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct MayaBridge.OtherSideRecord",
+              "name": "otherSideInfo",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "status",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "op",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "bridgeFee",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "cts",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "uts",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct MayaBridge.BridgeRecord",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
