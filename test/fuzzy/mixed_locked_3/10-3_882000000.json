@@ -1,0 +1,380 @@
+[ {
+  "eventType" : "SLOT",
+  "event_index" : 0
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 1,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 0.0
+  }, {
+    "user" : 1,
+    "amount" : 0.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 2,
+  "data" : {
+    "slot" : 0,
+    "amount" : 3000000.0
+  }
+}, {
+  "eventType" : "STAKE_LOCKED",
+  "event_index" : 3,
+  "data" : {
+    "user" : 2,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 4,
+  "data" : {
+    "user" : 1,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE_LOCKED",
+  "event_index" : 5,
+  "data" : {
+    "user" : 0,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 6
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 7,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 0.0
+  }, {
+    "user" : 1,
+    "amount" : 0.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 8,
+  "data" : {
+    "slot" : 1,
+    "amount" : 9000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 9,
+  "data" : {
+    "user" : 1,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 10,
+  "data" : {
+    "user" : 1,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE_LOCKED",
+  "event_index" : 11,
+  "data" : {
+    "user" : 0,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 12
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 13,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 4500000.0
+  }, {
+    "user" : 1,
+    "amount" : 1928571.0
+  }, {
+    "user" : 2,
+    "amount" : 2571428.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 14,
+  "data" : {
+    "slot" : 2,
+    "amount" : 4000000.0
+  }
+}, {
+  "eventType" : "STAKE_LOCKED",
+  "event_index" : 15,
+  "data" : {
+    "user" : 1,
+    "amount" : 50.0
+  }
+}, {
+  "eventType" : "STAKE_LOCKED",
+  "event_index" : 16,
+  "data" : {
+    "user" : 2,
+    "amount" : 90.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 17
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 18,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 6833333.0
+  }, {
+    "user" : 1,
+    "amount" : 2928571.0
+  }, {
+    "user" : 2,
+    "amount" : 3238095.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 19,
+  "data" : {
+    "slot" : 3,
+    "amount" : 1000000.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 20
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 21,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 7201754.0
+  }, {
+    "user" : 1,
+    "amount" : 3218045.0
+  }, {
+    "user" : 2,
+    "amount" : 3580200.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 22,
+  "data" : {
+    "slot" : 4,
+    "amount" : 7000000.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 23
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 24,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 9780701.0
+  }, {
+    "user" : 1,
+    "amount" : 5244360.0
+  }, {
+    "user" : 2,
+    "amount" : 5974937.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 25,
+  "data" : {
+    "slot" : 5,
+    "amount" : 3000000.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 26
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 27,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1.0885964E7
+  }, {
+    "user" : 1,
+    "amount" : 6112781.0
+  }, {
+    "user" : 2,
+    "amount" : 7001253.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 28,
+  "data" : {
+    "slot" : 6,
+    "amount" : 1000000.0
+  }
+}, {
+  "eventType" : "STAKE_LOCKED",
+  "event_index" : 29,
+  "data" : {
+    "user" : 0,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "STAKE_LOCKED",
+  "event_index" : 30,
+  "data" : {
+    "user" : 0,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 31,
+  "data" : {
+    "user" : 0,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 32
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 33,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1.1254385E7
+  }, {
+    "user" : 1,
+    "amount" : 6402255.0
+  }, {
+    "user" : 2,
+    "amount" : 7343358.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 34,
+  "data" : {
+    "slot" : 7,
+    "amount" : 8000000.0
+  }
+}, {
+  "eventType" : "UNSTAKE_LOCKED",
+  "event_index" : 35,
+  "data" : {
+    "user" : 0,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "UNSTAKE_LOCKED",
+  "event_index" : 36,
+  "data" : {
+    "user" : 1,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "STAKE_LOCKED",
+  "event_index" : 37,
+  "data" : {
+    "user" : 2,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 38
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 39,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1.5043859E7
+  }, {
+    "user" : 1,
+    "amount" : 7875939.0
+  }, {
+    "user" : 2,
+    "amount" : 1.00802E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 40,
+  "data" : {
+    "slot" : 8,
+    "amount" : 5000000.0
+  }
+}, {
+  "eventType" : "STAKE_LOCKED",
+  "event_index" : 41,
+  "data" : {
+    "user" : 2,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 42,
+  "data" : {
+    "user" : 1,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "UNSTAKE_LOCKED",
+  "event_index" : 43,
+  "data" : {
+    "user" : 1,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE_LOCKED",
+  "event_index" : 44,
+  "data" : {
+    "user" : 0,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 45
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 46,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1.7293859E7
+  }, {
+    "user" : 1,
+    "amount" : 8250939.0
+  }, {
+    "user" : 2,
+    "amount" : 1.24552E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 47,
+  "data" : {
+    "slot" : 9,
+    "amount" : 3000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 48,
+  "data" : {
+    "user" : 0,
+    "amount" : 90.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 49
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 50,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1.8619441E7
+  }, {
+    "user" : 1,
+    "amount" : 8460242.0
+  }, {
+    "user" : 2,
+    "amount" : 1.3920316E7
+  } ]
+} ]
