@@ -1,0 +1,2042 @@
+[ {
+  "eventType" : "SLOT",
+  "event_index" : 0
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 1,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 0.0
+  }, {
+    "user" : 1,
+    "amount" : 0.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  }, {
+    "user" : 3,
+    "amount" : 0.0
+  }, {
+    "user" : 4,
+    "amount" : 0.0
+  }, {
+    "user" : 5,
+    "amount" : 0.0
+  }, {
+    "user" : 6,
+    "amount" : 0.0
+  }, {
+    "user" : 7,
+    "amount" : 0.0
+  }, {
+    "user" : 8,
+    "amount" : 0.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 2,
+  "data" : {
+    "slot" : 0,
+    "amount" : 8000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 3,
+  "data" : {
+    "user" : 3,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 4,
+  "data" : {
+    "user" : 7,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 5,
+  "data" : {
+    "user" : 4,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 6,
+  "data" : {
+    "user" : 2,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 7,
+  "data" : {
+    "user" : 0,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 8,
+  "data" : {
+    "user" : 1,
+    "amount" : 50.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 9,
+  "data" : {
+    "user" : 8,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 10,
+  "data" : {
+    "user" : 5,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 11
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 12,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 0.0
+  }, {
+    "user" : 1,
+    "amount" : 0.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  }, {
+    "user" : 3,
+    "amount" : 0.0
+  }, {
+    "user" : 4,
+    "amount" : 0.0
+  }, {
+    "user" : 5,
+    "amount" : 0.0
+  }, {
+    "user" : 6,
+    "amount" : 0.0
+  }, {
+    "user" : 7,
+    "amount" : 0.0
+  }, {
+    "user" : 8,
+    "amount" : 0.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 13,
+  "data" : {
+    "slot" : 1,
+    "amount" : 2000000.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 14,
+  "data" : {
+    "user" : 5,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 15,
+  "data" : {
+    "user" : 2,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 16,
+  "data" : {
+    "user" : 8,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 17,
+  "data" : {
+    "user" : 3,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 18,
+  "data" : {
+    "user" : 6,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 19,
+  "data" : {
+    "user" : 0,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 20,
+  "data" : {
+    "user" : 4,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 21,
+  "data" : {
+    "user" : 4,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 22,
+  "data" : {
+    "user" : 7,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 23,
+  "data" : {
+    "user" : 1,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 24
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 25,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 315789.0
+  }, {
+    "user" : 1,
+    "amount" : 105263.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  }, {
+    "user" : 3,
+    "amount" : 842105.0
+  }, {
+    "user" : 4,
+    "amount" : 315789.0
+  }, {
+    "user" : 5,
+    "amount" : 0.0
+  }, {
+    "user" : 6,
+    "amount" : 0.0
+  }, {
+    "user" : 7,
+    "amount" : 105263.0
+  }, {
+    "user" : 8,
+    "amount" : 315789.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 26,
+  "data" : {
+    "slot" : 2,
+    "amount" : 7000000.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 27,
+  "data" : {
+    "user" : 6,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 28,
+  "data" : {
+    "user" : 7,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 29
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 30,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1640113.0
+  }, {
+    "user" : 1,
+    "amount" : 294452.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  }, {
+    "user" : 3,
+    "amount" : 3112375.0
+  }, {
+    "user" : 4,
+    "amount" : 883357.0
+  }, {
+    "user" : 5,
+    "amount" : 0.0
+  }, {
+    "user" : 6,
+    "amount" : 0.0
+  }, {
+    "user" : 7,
+    "amount" : 1051209.0
+  }, {
+    "user" : 8,
+    "amount" : 2018492.0
+  } ]
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 31,
+  "data" : {
+    "user" : 6,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 32
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 33,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1640113.0
+  }, {
+    "user" : 1,
+    "amount" : 294452.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  }, {
+    "user" : 3,
+    "amount" : 3112375.0
+  }, {
+    "user" : 4,
+    "amount" : 883357.0
+  }, {
+    "user" : 5,
+    "amount" : 0.0
+  }, {
+    "user" : 6,
+    "amount" : 0.0
+  }, {
+    "user" : 7,
+    "amount" : 1051209.0
+  }, {
+    "user" : 8,
+    "amount" : 2018492.0
+  } ]
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 34
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 35,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1640113.0
+  }, {
+    "user" : 1,
+    "amount" : 294452.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  }, {
+    "user" : 3,
+    "amount" : 3112375.0
+  }, {
+    "user" : 4,
+    "amount" : 883357.0
+  }, {
+    "user" : 5,
+    "amount" : 0.0
+  }, {
+    "user" : 6,
+    "amount" : 0.0
+  }, {
+    "user" : 7,
+    "amount" : 1051209.0
+  }, {
+    "user" : 8,
+    "amount" : 2018492.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 36,
+  "data" : {
+    "slot" : 5,
+    "amount" : 5000000.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 37
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 38,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 2340113.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  }, {
+    "user" : 3,
+    "amount" : 4312375.0
+  }, {
+    "user" : 4,
+    "amount" : 1183357.0
+  }, {
+    "user" : 5,
+    "amount" : 0.0
+  }, {
+    "user" : 6,
+    "amount" : 700000.0
+  }, {
+    "user" : 7,
+    "amount" : 2151209.0
+  }, {
+    "user" : 8,
+    "amount" : 2918492.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 39,
+  "data" : {
+    "slot" : 6,
+    "amount" : 2000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 40,
+  "data" : {
+    "user" : 3,
+    "amount" : 50.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 41,
+  "data" : {
+    "user" : 3,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 42,
+  "data" : {
+    "user" : 8,
+    "amount" : 50.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 43,
+  "data" : {
+    "user" : 1,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 44,
+  "data" : {
+    "user" : 2,
+    "amount" : 50.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 45,
+  "data" : {
+    "user" : 2,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 46,
+  "data" : {
+    "user" : 2,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 47,
+  "data" : {
+    "user" : 2,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 48,
+  "data" : {
+    "user" : 5,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 49,
+  "data" : {
+    "user" : 4,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 50
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 51,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 2637986.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  }, {
+    "user" : 3,
+    "amount" : 4823013.0
+  }, {
+    "user" : 4,
+    "amount" : 1225910.0
+  }, {
+    "user" : 5,
+    "amount" : 0.0
+  }, {
+    "user" : 6,
+    "amount" : 997872.0
+  }, {
+    "user" : 7,
+    "amount" : 2619294.0
+  }, {
+    "user" : 8,
+    "amount" : 3301470.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 52,
+  "data" : {
+    "slot" : 7,
+    "amount" : 2000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 53,
+  "data" : {
+    "user" : 3,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 54,
+  "data" : {
+    "user" : 2,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 55,
+  "data" : {
+    "user" : 4,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 56,
+  "data" : {
+    "user" : 8,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 57,
+  "data" : {
+    "user" : 7,
+    "amount" : 90.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 58,
+  "data" : {
+    "user" : 0,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 59,
+  "data" : {
+    "user" : 0,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 60,
+  "data" : {
+    "user" : 5,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 61
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 62,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 2637986.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 0.0
+  }, {
+    "user" : 3,
+    "amount" : 5643526.0
+  }, {
+    "user" : 4,
+    "amount" : 1277192.0
+  }, {
+    "user" : 5,
+    "amount" : 51282.0
+  }, {
+    "user" : 6,
+    "amount" : 1356846.0
+  }, {
+    "user" : 7,
+    "amount" : 2721858.0
+  }, {
+    "user" : 8,
+    "amount" : 3916855.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 63,
+  "data" : {
+    "slot" : 8,
+    "amount" : 6000000.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 64,
+  "data" : {
+    "user" : 7,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 65,
+  "data" : {
+    "user" : 4,
+    "amount" : 100.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 66
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 67,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 2637986.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 352941.0
+  }, {
+    "user" : 3,
+    "amount" : 8349409.0
+  }, {
+    "user" : 4,
+    "amount" : 1630133.0
+  }, {
+    "user" : 5,
+    "amount" : 286576.0
+  }, {
+    "user" : 6,
+    "amount" : 2180376.0
+  }, {
+    "user" : 7,
+    "amount" : 2839505.0
+  }, {
+    "user" : 8,
+    "amount" : 5328620.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 68,
+  "data" : {
+    "slot" : 9,
+    "amount" : 6000000.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 69
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 70,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 2637986.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 648023.0
+  }, {
+    "user" : 3,
+    "amount" : 1.0611704E7
+  }, {
+    "user" : 4,
+    "amount" : 2908821.0
+  }, {
+    "user" : 5,
+    "amount" : 483297.0
+  }, {
+    "user" : 6,
+    "amount" : 2868900.0
+  }, {
+    "user" : 7,
+    "amount" : 2937866.0
+  }, {
+    "user" : 8,
+    "amount" : 6508948.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 71,
+  "data" : {
+    "slot" : 10,
+    "amount" : 1.0E7
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 72
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 73,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 2637986.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 1139826.0
+  }, {
+    "user" : 3,
+    "amount" : 1.4382195E7
+  }, {
+    "user" : 4,
+    "amount" : 5039969.0
+  }, {
+    "user" : 5,
+    "amount" : 811166.0
+  }, {
+    "user" : 6,
+    "amount" : 4016441.0
+  }, {
+    "user" : 7,
+    "amount" : 3101800.0
+  }, {
+    "user" : 8,
+    "amount" : 8476161.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 74,
+  "data" : {
+    "slot" : 11,
+    "amount" : 5000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 75,
+  "data" : {
+    "user" : 5,
+    "amount" : 90.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 76,
+  "data" : {
+    "user" : 1,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 77
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 78,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 2637986.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 1385728.0
+  }, {
+    "user" : 3,
+    "amount" : 1.6267441E7
+  }, {
+    "user" : 4,
+    "amount" : 6105543.0
+  }, {
+    "user" : 5,
+    "amount" : 975100.0
+  }, {
+    "user" : 6,
+    "amount" : 4590212.0
+  }, {
+    "user" : 7,
+    "amount" : 3183767.0
+  }, {
+    "user" : 8,
+    "amount" : 9459767.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 79,
+  "data" : {
+    "slot" : 12,
+    "amount" : 3000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 80,
+  "data" : {
+    "user" : 0,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 81,
+  "data" : {
+    "user" : 2,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 82,
+  "data" : {
+    "user" : 8,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 83,
+  "data" : {
+    "user" : 8,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 84,
+  "data" : {
+    "user" : 1,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 85,
+  "data" : {
+    "user" : 6,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 86
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 87,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 2637986.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 1540900.0
+  }, {
+    "user" : 3,
+    "amount" : 1.7457096E7
+  }, {
+    "user" : 4,
+    "amount" : 6777957.0
+  }, {
+    "user" : 5,
+    "amount" : 1544066.0
+  }, {
+    "user" : 6,
+    "amount" : 4641936.0
+  }, {
+    "user" : 7,
+    "amount" : 3235491.0
+  }, {
+    "user" : 8,
+    "amount" : 9770112.0
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 88,
+  "data" : {
+    "slot" : 13,
+    "amount" : 2000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 89,
+  "data" : {
+    "user" : 7,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 90,
+  "data" : {
+    "user" : 3,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 91,
+  "data" : {
+    "user" : 6,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 92,
+  "data" : {
+    "user" : 0,
+    "amount" : 50.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 93,
+  "data" : {
+    "user" : 0,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 94,
+  "data" : {
+    "user" : 8,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 95,
+  "data" : {
+    "user" : 2,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 96,
+  "data" : {
+    "user" : 2,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 97
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 98,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 2814456.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 1540900.0
+  }, {
+    "user" : 3,
+    "amount" : 1.8133567E7
+  }, {
+    "user" : 4,
+    "amount" : 7160310.0
+  }, {
+    "user" : 5,
+    "amount" : 1867595.0
+  }, {
+    "user" : 6,
+    "amount" : 4671348.0
+  }, {
+    "user" : 7,
+    "amount" : 3264903.0
+  }, {
+    "user" : 8,
+    "amount" : 1.0152465E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 99,
+  "data" : {
+    "slot" : 14,
+    "amount" : 6000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 100,
+  "data" : {
+    "user" : 7,
+    "amount" : 90.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 101
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 102,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 3751956.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 2040900.0
+  }, {
+    "user" : 3,
+    "amount" : 1.9946067E7
+  }, {
+    "user" : 4,
+    "amount" : 7972810.0
+  }, {
+    "user" : 5,
+    "amount" : 2555095.0
+  }, {
+    "user" : 6,
+    "amount" : 4796348.0
+  }, {
+    "user" : 7,
+    "amount" : 3452403.0
+  }, {
+    "user" : 8,
+    "amount" : 1.1089965E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 103,
+  "data" : {
+    "slot" : 15,
+    "amount" : 5000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 104,
+  "data" : {
+    "user" : 4,
+    "amount" : 90.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 105
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 106,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 4466242.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 2421852.0
+  }, {
+    "user" : 3,
+    "amount" : 2.1327019E7
+  }, {
+    "user" : 4,
+    "amount" : 8591857.0
+  }, {
+    "user" : 5,
+    "amount" : 3078905.0
+  }, {
+    "user" : 6,
+    "amount" : 4891586.0
+  }, {
+    "user" : 7,
+    "amount" : 4023832.0
+  }, {
+    "user" : 8,
+    "amount" : 1.1804251E7
+  } ]
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 107,
+  "data" : {
+    "user" : 1,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 108,
+  "data" : {
+    "user" : 4,
+    "amount" : 50.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 109,
+  "data" : {
+    "user" : 4,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 110
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 111,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 4466242.0
+  }, {
+    "user" : 1,
+    "amount" : 394452.0
+  }, {
+    "user" : 2,
+    "amount" : 2421852.0
+  }, {
+    "user" : 3,
+    "amount" : 2.1327019E7
+  }, {
+    "user" : 4,
+    "amount" : 8591857.0
+  }, {
+    "user" : 5,
+    "amount" : 3078905.0
+  }, {
+    "user" : 6,
+    "amount" : 4891586.0
+  }, {
+    "user" : 7,
+    "amount" : 4023832.0
+  }, {
+    "user" : 8,
+    "amount" : 1.1804251E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 112,
+  "data" : {
+    "slot" : 17,
+    "amount" : 7000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 113,
+  "data" : {
+    "user" : 5,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 114,
+  "data" : {
+    "user" : 1,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 115
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 116,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 5348595.0
+  }, {
+    "user" : 1,
+    "amount" : 453275.0
+  }, {
+    "user" : 2,
+    "amount" : 2892441.0
+  }, {
+    "user" : 3,
+    "amount" : 2.3032902E7
+  }, {
+    "user" : 4,
+    "amount" : 1.0121269E7
+  }, {
+    "user" : 5,
+    "amount" : 3725964.0
+  }, {
+    "user" : 6,
+    "amount" : 5009233.0
+  }, {
+    "user" : 7,
+    "amount" : 4729714.0
+  }, {
+    "user" : 8,
+    "amount" : 1.2686604E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 117,
+  "data" : {
+    "slot" : 18,
+    "amount" : 6000000.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 118,
+  "data" : {
+    "user" : 6,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 119,
+  "data" : {
+    "user" : 6,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 120,
+  "data" : {
+    "user" : 5,
+    "amount" : 100.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 121,
+  "data" : {
+    "user" : 0,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 122,
+  "data" : {
+    "user" : 8,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 123,
+  "data" : {
+    "user" : 8,
+    "amount" : 90.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 124,
+  "data" : {
+    "user" : 8,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 125
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 126,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 5878007.0
+  }, {
+    "user" : 1,
+    "amount" : 923864.0
+  }, {
+    "user" : 2,
+    "amount" : 3363029.0
+  }, {
+    "user" : 3,
+    "amount" : 2.4738784E7
+  }, {
+    "user" : 4,
+    "amount" : 1.1650681E7
+  }, {
+    "user" : 5,
+    "amount" : 3843611.0
+  }, {
+    "user" : 6,
+    "amount" : 5009233.0
+  }, {
+    "user" : 7,
+    "amount" : 5435596.0
+  }, {
+    "user" : 8,
+    "amount" : 1.3157192E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 127,
+  "data" : {
+    "slot" : 19,
+    "amount" : 3000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 128,
+  "data" : {
+    "user" : 6,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 129,
+  "data" : {
+    "user" : 3,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 130,
+  "data" : {
+    "user" : 2,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 131,
+  "data" : {
+    "user" : 2,
+    "amount" : 50.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 132,
+  "data" : {
+    "user" : 0,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 133,
+  "data" : {
+    "user" : 0,
+    "amount" : 90.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 134,
+  "data" : {
+    "user" : 7,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 135,
+  "data" : {
+    "user" : 8,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 136
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 137,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 6120431.0
+  }, {
+    "user" : 1,
+    "amount" : 1166288.0
+  }, {
+    "user" : 2,
+    "amount" : 3363029.0
+  }, {
+    "user" : 3,
+    "amount" : 2.5556966E7
+  }, {
+    "user" : 4,
+    "amount" : 1.2438559E7
+  }, {
+    "user" : 5,
+    "amount" : 3904217.0
+  }, {
+    "user" : 6,
+    "amount" : 5130445.0
+  }, {
+    "user" : 7,
+    "amount" : 5799233.0
+  }, {
+    "user" : 8,
+    "amount" : 1.3520828E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 138,
+  "data" : {
+    "slot" : 20,
+    "amount" : 7000000.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 139,
+  "data" : {
+    "user" : 0,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 140,
+  "data" : {
+    "user" : 2,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 141,
+  "data" : {
+    "user" : 2,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 142,
+  "data" : {
+    "user" : 2,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 143,
+  "data" : {
+    "user" : 7,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 144,
+  "data" : {
+    "user" : 3,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 145
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 146,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 6848431.0
+  }, {
+    "user" : 1,
+    "amount" : 1614288.0
+  }, {
+    "user" : 2,
+    "amount" : 3643029.0
+  }, {
+    "user" : 3,
+    "amount" : 2.7068966E7
+  }, {
+    "user" : 4,
+    "amount" : 1.3894559E7
+  }, {
+    "user" : 5,
+    "amount" : 4016217.0
+  }, {
+    "user" : 6,
+    "amount" : 5578445.0
+  }, {
+    "user" : 7,
+    "amount" : 6807233.0
+  }, {
+    "user" : 8,
+    "amount" : 1.4528828E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 147,
+  "data" : {
+    "slot" : 21,
+    "amount" : 7000000.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 148
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 149,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 7489276.0
+  }, {
+    "user" : 1,
+    "amount" : 2008654.0
+  }, {
+    "user" : 2,
+    "amount" : 4185282.0
+  }, {
+    "user" : 3,
+    "amount" : 2.8597135E7
+  }, {
+    "user" : 4,
+    "amount" : 1.517625E7
+  }, {
+    "user" : 5,
+    "amount" : 4114808.0
+  }, {
+    "user" : 6,
+    "amount" : 5972811.0
+  }, {
+    "user" : 7,
+    "amount" : 8039627.0
+  }, {
+    "user" : 8,
+    "amount" : 1.5416152E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 150,
+  "data" : {
+    "slot" : 22,
+    "amount" : 9000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 151,
+  "data" : {
+    "user" : 4,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 152,
+  "data" : {
+    "user" : 4,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 153,
+  "data" : {
+    "user" : 1,
+    "amount" : 60.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 154
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 155,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 8349570.0
+  }, {
+    "user" : 1,
+    "amount" : 2141007.0
+  }, {
+    "user" : 2,
+    "amount" : 4913224.0
+  }, {
+    "user" : 3,
+    "amount" : 3.0648606E7
+  }, {
+    "user" : 4,
+    "amount" : 1.6896838E7
+  }, {
+    "user" : 5,
+    "amount" : 4247161.0
+  }, {
+    "user" : 6,
+    "amount" : 6502223.0
+  }, {
+    "user" : 7,
+    "amount" : 9694039.0
+  }, {
+    "user" : 8,
+    "amount" : 1.6607329E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 156,
+  "data" : {
+    "slot" : 23,
+    "amount" : 2000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 157,
+  "data" : {
+    "user" : 4,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 158
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 159,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 8540747.0
+  }, {
+    "user" : 1,
+    "amount" : 2170419.0
+  }, {
+    "user" : 2,
+    "amount" : 5074988.0
+  }, {
+    "user" : 3,
+    "amount" : 3.1104488E7
+  }, {
+    "user" : 4,
+    "amount" : 1.7279191E7
+  }, {
+    "user" : 5,
+    "amount" : 4276573.0
+  }, {
+    "user" : 6,
+    "amount" : 6619870.0
+  }, {
+    "user" : 7,
+    "amount" : 1.0061686E7
+  }, {
+    "user" : 8,
+    "amount" : 1.6872035E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 160,
+  "data" : {
+    "slot" : 24,
+    "amount" : 6000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 161,
+  "data" : {
+    "user" : 2,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 162,
+  "data" : {
+    "user" : 6,
+    "amount" : 50.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 163,
+  "data" : {
+    "user" : 8,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 164
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 165,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 9122836.0
+  }, {
+    "user" : 1,
+    "amount" : 2259971.0
+  }, {
+    "user" : 2,
+    "amount" : 5567526.0
+  }, {
+    "user" : 3,
+    "amount" : 3.2492548E7
+  }, {
+    "user" : 4,
+    "amount" : 1.8577698E7
+  }, {
+    "user" : 5,
+    "amount" : 4366125.0
+  }, {
+    "user" : 6,
+    "amount" : 6754198.0
+  }, {
+    "user" : 7,
+    "amount" : 1.1181089E7
+  }, {
+    "user" : 8,
+    "amount" : 1.7678005E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 166,
+  "data" : {
+    "slot" : 25,
+    "amount" : 7000000.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 167,
+  "data" : {
+    "user" : 3,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 168,
+  "data" : {
+    "user" : 6,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 169,
+  "data" : {
+    "user" : 6,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 170,
+  "data" : {
+    "user" : 7,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 171,
+  "data" : {
+    "user" : 7,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 172,
+  "data" : {
+    "user" : 2,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 173,
+  "data" : {
+    "user" : 2,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 174,
+  "data" : {
+    "user" : 8,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 175,
+  "data" : {
+    "user" : 0,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 176
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 177,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 9828262.0
+  }, {
+    "user" : 1,
+    "amount" : 2368498.0
+  }, {
+    "user" : 2,
+    "amount" : 6272952.0
+  }, {
+    "user" : 3,
+    "amount" : 3.4066191E7
+  }, {
+    "user" : 4,
+    "amount" : 2.0151342E7
+  }, {
+    "user" : 5,
+    "amount" : 4474652.0
+  }, {
+    "user" : 6,
+    "amount" : 6754198.0
+  }, {
+    "user" : 7,
+    "amount" : 1.2537678E7
+  }, {
+    "user" : 8,
+    "amount" : 1.8546222E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 178,
+  "data" : {
+    "slot" : 26,
+    "amount" : 9000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 179,
+  "data" : {
+    "user" : 5,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 180,
+  "data" : {
+    "user" : 2,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 181,
+  "data" : {
+    "user" : 7,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 182,
+  "data" : {
+    "user" : 7,
+    "amount" : 50.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 183,
+  "data" : {
+    "user" : 0,
+    "amount" : 20.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 184,
+  "data" : {
+    "user" : 3,
+    "amount" : 40.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 185
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 186,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1.0663977E7
+  }, {
+    "user" : 1,
+    "amount" : 2497070.0
+  }, {
+    "user" : 2,
+    "amount" : 7815809.0
+  }, {
+    "user" : 3,
+    "amount" : 3.5673334E7
+  }, {
+    "user" : 4,
+    "amount" : 2.2015627E7
+  }, {
+    "user" : 5,
+    "amount" : 4603224.0
+  }, {
+    "user" : 6,
+    "amount" : 7268484.0
+  }, {
+    "user" : 7,
+    "amount" : 1.3887678E7
+  }, {
+    "user" : 8,
+    "amount" : 1.9574793E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 187,
+  "data" : {
+    "slot" : 27,
+    "amount" : 8000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 188,
+  "data" : {
+    "user" : 1,
+    "amount" : 90.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 189,
+  "data" : {
+    "user" : 5,
+    "amount" : 80.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 190
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 191,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1.1396371E7
+  }, {
+    "user" : 1,
+    "amount" : 2609746.0
+  }, {
+    "user" : 2,
+    "amount" : 9336936.0
+  }, {
+    "user" : 3,
+    "amount" : 3.7081785E7
+  }, {
+    "user" : 4,
+    "amount" : 2.364943E7
+  }, {
+    "user" : 5,
+    "amount" : 4659562.0
+  }, {
+    "user" : 6,
+    "amount" : 7719188.0
+  }, {
+    "user" : 7,
+    "amount" : 1.5070777E7
+  }, {
+    "user" : 8,
+    "amount" : 2.0476202E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 192,
+  "data" : {
+    "slot" : 28,
+    "amount" : 5000000.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 193,
+  "data" : {
+    "user" : 1,
+    "amount" : 70.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 194,
+  "data" : {
+    "user" : 4,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 195,
+  "data" : {
+    "user" : 4,
+    "amount" : 90.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 196
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 197,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1.1844647E7
+  }, {
+    "user" : 1,
+    "amount" : 2989056.0
+  }, {
+    "user" : 2,
+    "amount" : 1.026797E7
+  }, {
+    "user" : 3,
+    "amount" : 3.7943854E7
+  }, {
+    "user" : 4,
+    "amount" : 2.4442534E7
+  }, {
+    "user" : 5,
+    "amount" : 4694044.0
+  }, {
+    "user" : 6,
+    "amount" : 7995050.0
+  }, {
+    "user" : 7,
+    "amount" : 1.5794915E7
+  }, {
+    "user" : 8,
+    "amount" : 2.1027926E7
+  } ]
+}, {
+  "eventType" : "DEPOSIT",
+  "event_index" : 198,
+  "data" : {
+    "slot" : 29,
+    "amount" : 4000000.0
+  }
+}, {
+  "eventType" : "UNSTAKE",
+  "event_index" : 199,
+  "data" : {
+    "user" : 8,
+    "amount" : 30.0
+  }
+}, {
+  "eventType" : "STAKE",
+  "event_index" : 200,
+  "data" : {
+    "user" : 6,
+    "amount" : 10.0
+  }
+}, {
+  "eventType" : "SLOT",
+  "event_index" : 201
+}, {
+  "eventType" : "ASSERT",
+  "event_index" : 202,
+  "data" : [ {
+    "user" : 0,
+    "amount" : 1.219364E7
+  }, {
+    "user" : 1,
+    "amount" : 3472277.0
+  }, {
+    "user" : 2,
+    "amount" : 1.0992803E7
+  }, {
+    "user" : 3,
+    "amount" : 3.8614994E7
+  }, {
+    "user" : 4,
+    "amount" : 2.5059983E7
+  }, {
+    "user" : 5,
+    "amount" : 4720890.0
+  }, {
+    "user" : 6,
+    "amount" : 8209815.0
+  }, {
+    "user" : 7,
+    "amount" : 1.6358673E7
+  }, {
+    "user" : 8,
+    "amount" : 2.1376919E7
+  } ]
+} ]
